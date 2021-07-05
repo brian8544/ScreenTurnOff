@@ -7,10 +7,9 @@
     <StartupObject>ScreenTurnOff.ScreenTurnOff</StartupObject>
     <Description>Turn off your screen(s) with a click of a button.</Description>
     <PackageProjectUrl>https://github.com/brian8544/ScreenTurnOff</PackageProjectUrl>
-    <PackageIcon>icon.ico</PackageIcon>
-    <PackageIconUrl />
     <RepositoryUrl>https://github.com/brian8544/ScreenTurnOff.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+	<PublishTrimmed>true</PublishTrimmed>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -18,13 +17,13 @@
     <WarningLevel>0</WarningLevel>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
+    <NoWarn />
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="icon.ico">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+    <None Remove="icon.ico" />
+    <None Remove="icon.ico" />
   </ItemGroup>
 
 </Project>
