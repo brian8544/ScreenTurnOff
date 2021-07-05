@@ -29,6 +29,7 @@ namespace ScreenTurnOff
             Console.Title = ("brian8544 - github.com/brian8544");
             Console.WriteLine("brian8544 - github.com/brian8544");
             SendMessage(GetConsoleWindow(), WM_SYSCOMMAND, (IntPtr)SC_MONITORPOWER, (IntPtr)2);
+            Environment.Exit(0);
         }
     }
 }
